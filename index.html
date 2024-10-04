@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дім для літніх людей у Вінниці</title>
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Подключение FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Подключение кастомных стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Hero Section -->
+    <section class="hero-section relative bg-cover bg-center h-screen"
+        style="background-image: url('hero1.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="container mx-auto px-6 py-32 text-white relative z-10 text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Комфорт та турбота — кожен день</h1>
+            <p class="mt-2 text-xl mb-8">Ваші рідні під надійним доглядом у нашому будинку для людей похилого віку у
+                Вінниці.</p>
+            <a href="#contact"
+                class="inline-block bg-yellow-500 text-lg font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-600 transition-all">
+                <i class="fas fa-phone-alt mr-2"></i>Запишіться на екскурсію
+            </a>
+        </div>
+    </section>
+
+<!-- Block 1: Привітання та коротке представлення -->
+<section id="introduction" class="py-5 bg-light">
+    <div class="container text-center">
+        <div class="row align-items-center g-5">
+            <!-- Image Column -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="hero3.jpg" alt="Привітання" class="img-fluid rounded shadow-lg" style="max-width: 90%;">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6 text-md-start text-center">
+                <h2 class="display-4 fw-bold text-dark mb-4">Трохи про нас</h2>
+                <p class="fs-5 text-muted mb-4">
+                    Ви шукаєте місце, де ваші рідні відчуватимуть себе як вдома, а ви будете впевнені, що вони в
+                    надійних руках? Наша команда у Вінниці створює умови для літніх людей, в яких вони не лише отримують
+                    професійний догляд, але й відчувають любов, турботу та повагу до кожного життєвого етапу.
+                </p>
+                <a href="#contact"
+                    class="btn btn-lg btn-warning text-dark px-5 py-3 fw-semibold shadow-sm rounded-pill">
+                    <i class="fas fa-info-circle me-2"></i> Запишіться на екскурсію
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- New Section: Про дім -->
+<section id="about-home" class="py-5 bg-white">
+    <div class="container text-center">
+        <div class="row align-items-center g-5">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="house.jpg" alt="Про дім" class="img-fluid rounded shadow-lg" style="max-width: 100%;">
+            </div>
+            <!-- Description Column -->
+            <div class="col-md-6 text-md-start text-center">
+                <h1 class="h1 fw-semibold text-dark">Затишок, комфорт та турбота</h1>
+                <p class="fs-5 text-muted mb-4">
+                    Наш будинок для літніх людей у Вінниці — це місце, де кожен мешканець відчуває себе як вдома. Ми
+                    дбаємо про створення комфорту, безпеки та дружньої атмосфери. Наші кімнати обладнані сучасними
+                    меблями, зручними ліжками та усіма необхідними зручностями для щасливого проживання.
+                </p>
+                <p class="fs-5 text-muted mb-4">
+                    Ми розуміємо, як важливо мати власний простір та можливість насолоджуватися повсякденними
+                    заняттями. Саме тому наш дім для літніх людей пропонує широкий спектр послуг: від медичної
+                    допомоги до організації дозвілля та індивідуальних консультацій з психологами.
+                </p>
+                <p class="fs-5 text-muted mb-4">
+                    Ми віримо, що справжній дім — це місце, де панує турбота, взаєморозуміння та повага. Запрошуємо
+                    вас на екскурсію, аби на власні очі переконатися в унікальності нашого підходу до догляду за
+                    літніми людьми.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Benefits Section -->
+<section id="benefits" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-5 text-dark">Наші ключові переваги</h2>
+        <div class="row justify-content-center g-4">
+            <!-- Card 1: Професійний догляд -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="healthcare.jpg" class="card-img-top rounded-top" alt="Професійний догляд">
+                    <div class="card-body">
+                        <i class="fas fa-user-md fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Професійний догляд</h3>
+                        <p class="card-text text-muted">
+                            Наш персонал має багаторічний досвід роботи з літніми людьми, надаючи кваліфіковану допомогу
+                            та підтримку 24/7.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: Безпека -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="community.jpg" class="card-img-top rounded-top" alt="Безпека">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Безпека</h3>
+                        <p class="card-text text-muted">
+                            Цілодобовий медичний нагляд, системи оповіщення та безпеки забезпечують максимальний захист
+                            мешканців нашого дому.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: Активне життя -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="daily.jpg" class="card-img-top rounded-top" alt="Активне життя">
+                    <div class="card-body">
+                        <i class="fas fa-heartbeat fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Активне життя</h3>
+                        <p class="card-text text-muted">
+                            Ми організовуємо щоденні заняття та заходи для підтримки фізичного і психологічного здоров’я
+                            мешканців.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: Соціальна підтримка -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="healthcare.jpg" class="card-img-top rounded-top" alt="Соціальна підтримка">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Соціальна підтримка</h3>
+                        <p class="card-text text-muted">
+                            Наші спеціалісти надають соціальну підтримку, допомагають з адаптацією та проводять
+                            індивідуальні консультації.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Медичний супровід -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="healthcare.jpg" class="card-img-top rounded-top" alt="Медичний супровід">
+                    <div class="card-body">
+                        <i class="fas fa-stethoscope fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Медичний супровід</h3>
+                        <p class="card-text text-muted">
+                            Ми забезпечуємо постійний медичний супровід, регулярні перевірки стану здоров’я та підтримку
+                            при необхідності.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Індивідуальні програми -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card border-0 shadow-lg h-100">
+                    <img src="healthcare.jpg" class="card-img-top rounded-top" alt="Індивідуальні програми">
+                    <div class="card-body">
+                        <i class="fas fa-cogs fa-2x text-warning mb-3"></i>
+                        <h3 class="card-title h5 fw-bold text-dark">Індивідуальні програми</h3>
+                        <p class="card-text text-muted">
+                            Ми створюємо індивідуальні програми, орієнтовані на інтереси кожного мешканця, для підтримки
+                            їхнього активного життя.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-white">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-5 text-dark">Реальні історії наших мешканців та відгуки родичів</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex flex-column align-items-center bg-white p-4 border rounded shadow-lg">
+                        <img src="about1.jpg" alt="Мешканець" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                        <p class="text-muted fst-italic">
+                            "Моя мама знову посміхається і щодня ділиться новими враженнями. Професіоналізм та людяність кожного працівника — ось що відрізняє цей дім."
+                        </p>
+                        <h3 class="mt-3 h5 fw-bold text-warning">— Наталія, донька мешканки</h3>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center bg-white p-4 border rounded shadow-lg">
+                        <img src="about2.jpg" alt="Мешканець" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                        <p class="text-muted fst-italic">
+                            "Довго шукали місце, де наш дідусь почуватиметься комфортно. Тут він знову активний, спілкується з новими друзями та навіть знайшов хобі — грає у шахи!"
+                        </p>
+                        <h3 class="mt-3 h5 fw-bold text-warning">— Андрій, онук мешканця</h3>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex flex-column align-items-center bg-white p-4 border rounded shadow-lg">
+                        <img src="about3.jpg" alt="Мешканець" class="rounded-circle mb-3" style="width: 80px; height: 80px;">
+                        <p class="text-muted fst-italic">
+                            "Знайшли цей дім через рекомендацію друзів. Мама задоволена, персонал дійсно турбується про кожного мешканця. Велика вдячність усім працівникам!"
+                        </p>
+                        <h3 class="mt-3 h5 fw-bold text-warning">— Ольга, донька мешканки</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-warning rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-warning rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="display-5 fw-bold mb-5 text-dark">Галерея нашого дому</h2>
+        <div class="row g-4">
+            <!-- Gallery Image 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 1" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal1">
+                </div>
+            </div>
+            <!-- Gallery Image 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 2" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal2">
+                </div>
+            </div>
+            <!-- Gallery Image 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 3" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal3">
+                </div>
+            </div>
+            <!-- Gallery Image 4 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 4" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal4">
+                </div>
+            </div>
+            <!-- Gallery Image 5 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 5" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal5">
+                </div>
+            </div>
+            <!-- Gallery Image 6 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="house.jpg" class="card-img-top rounded" alt="Галерея 6" data-bs-toggle="modal"
+                        data-bs-target="#galleryModal6">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Modals (using same image "house.jpg") -->
+<!-- Modal Template -->
+<div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Repeat the Modal Template for Other Images -->
+<div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal5" tabindex="-1" aria-labelledby="galleryModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="galleryModal6" tabindex="-1" aria-labelledby="galleryModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="house.jpg" class="img-fluid rounded" alt="Галерея">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12">Зв'яжіться з нами</h2>
+            <form class="w-full md:w-1/2 mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Ім'я</label>
+                    <input type="text" class="w-full px-4 py-2 border rounded-lg" placeholder="Введіть ваше ім'я">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Номер телефону</label>
+                    <input type="tel" class="w-full px-4 py-2 border rounded-lg" placeholder="Введіть ваш номер">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input type="email" class="w-full px-4 py-2 border rounded-lg" placeholder="Введіть ваш email">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Повідомлення</label>
+                    <textarea class="w-full px-4 py-2 border rounded-lg" rows="4"
+                        placeholder="Ваше повідомлення"></textarea>
+                </div>
+                <button class="w-full bg-yellow-500 text-white px-6 py-2 rounded-lg hover:bg-yellow-600 transition-all">
+                    <i class="fas fa-paper-plane mr-2"></i>Надіслати
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-gray-900 text-white text-center">
+        <p class="text-sm">&copy; 2024 Дім для літніх людей у Вінниці. Всі права захищені.</p>
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add Bootstrap 5 and Font Awesome CSS -->
+
+
+</body>
+
+</html>
