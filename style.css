@@ -2,220 +2,350 @@
 body,
 html {
     scroll-behavior: smooth;
-    font-family: 'PT-Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: #343a40;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Heading Font Family */
+/* Typography for Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'PT-Sans Narrow';
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #343a40;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 /* Hero Section Styling */
 .hero-section {
-    background-size: cover;
-    background-position: center;
+    padding: 8rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
 }
 
 /* Section: Про наш дім */
 #about-home {
     background: #f8f9fa;
-    /* Light background */
     padding: 4rem 0;
-    /* Add padding for better spacing */
 }
 
-#about-home h2 {
-    /* Change heading font */
+#about-home h2,
+#benefits h2,
+#testimonials h2 {
     font-size: 2.25rem;
-    letter-spacing: 1px;
-    /* Add spacing between letters */
-    margin-bottom: 1rem;
-    /* Spacing below the heading */
+    margin-bottom: 2rem;
 }
 
-#about-home h3 {
+#about-home h3,
+#benefits .card-title {
     font-size: 1.75rem;
-    /* Increase subtitle size */
-    color: #343a40;
-    /* Darker text for subtitle */
-    margin-bottom: 1rem;
+    color: #495057;
 }
 
-#about-home p {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.8;
-    /* Increase line spacing for readability */
+#about-home p,
+#benefits .card-text,
+#testimonials p {
     color: #6c757d;
-    /* Use Bootstrap's muted text color */
-    margin-bottom: 1.5rem;
-    /* Space below paragraphs */
-}
-
-#about-home a.btn {
-    background: #ffc107;
-    /* Custom yellow */
-    border: none;
-    /* Remove border */
-    transition: background 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    /* Inline block for button appearance */
     font-size: 1rem;
-    padding: 14px 28px;
-    /* Padding for button */
+    margin-bottom: 1.5rem;
+}
+
+/* Introduction Section Styling */
+#introduction {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+#introduction h2 {
+    font-size: 2.5rem;
     color: #343a40;
-    /* Dark text color for contrast */
-    border-radius: 5px;
-    /* Rounded corners */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
-#about-home a.btn:hover {
-    background: #e0a800;
-    /* Darker yellow on hover */
-    transform: translateY(-2px);
-    /* Slight hover effect */
-    color: #fff;
-    /* White text on hover */
+#introduction p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #6c757d;
+    margin-bottom: 2rem;
 }
 
-#about-home img {
-    border-radius: 15px;
-    /* Round the image corners */
+#introduction img {
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
     max-width: 100%;
-    /* Ensure responsive images */
     height: auto;
 }
 
-#benefits {
-    background-color: #f9f9f9;
-    /* Light background for the entire section */
-    padding: 60px 0;
+#introduction a.btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    color: #ffffff;
+    background: #afd30e;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#benefits h2 {
+#introduction a.btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Button and Link Styling */
+a.btn,
+button,
+.slider-btn {
     font-family: 'PT Sans', sans-serif;
-    /* Use PT Sans for heading */
-    letter-spacing: 1.5px;
-    /* Add spacing between letters */
-    color: #343a40;
-    /* Darker heading color */
-    margin-bottom: 3rem;
-    /* Add extra margin to separate from content */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+a.btn:hover,
+button:hover,
+.slider-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Image Styling */
+img,
+.card-img-top {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: Benefits */
+#benefits {
+    background-color: #f9f9f9;
 }
 
 #benefits .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    /* Remove default border */
     border-radius: 12px;
-    /* Slight rounded corners */
 }
 
 #benefits .card:hover {
     transform: translateY(-8px);
-    /* Slight hover effect */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    /* Elevated shadow */
 }
 
-#benefits .card img {
-    border-top-left-radius: 12px;
-    /* Rounded top corners */
-    border-top-right-radius: 12px;
-    /* Rounded top corners */
-}
-
-#benefits .card-body {
-    padding: 24px;
-    /* Increase padding inside cards */
-}
-
-#benefits .card-title {
-    font-family: 'PT Sans', sans-serif;
-    /* Use PT Sans for card titles */
-    color: #495057;
-    /* Soft gray text color */
-    margin-bottom: 16px;
-    font-size: 1.25rem;
-    /* Increase title size */
-    font-weight: 700;
-    /* Bold title */
-}
-
-#benefits .card-text {
-    font-family: 'PT Sans', sans-serif;
-    /* Use PT Sans for text */
-    color: #6c757d;
-    /* Bootstrap's muted text color */
-    line-height: 1.6;
-    /* Improved line spacing */
-}
-
-#benefits .card i {
-    color: #ffc107;
-    /* Font Awesome icon color */
-    transition: color 0.3s ease;
-}
-
-#benefits .card:hover i {
-    color: #e0a800;
-    /* Darker yellow on hover */
-}
-
+/* Section: Testimonials */
 #testimonials {
     background: #f1f3f5;
-    /* Light gray background */
-    padding: 60px 0;
-}
-
-#testimonials h2 {
-    font-family: 'PT Sans', sans-serif;
-    /* Apply PT Sans font */
-    letter-spacing: 1px;
-    /* Add letter spacing */
-    color: #343a40;
-    /* Darker color for headings */
 }
 
 #testimonials .card {
     border-radius: 12px;
-    /* Rounded corners */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #testimonials .card:hover {
     transform: translateY(-5px);
-    /* Slight lift on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
 }
 
 #testimonials .carousel-control-prev-icon,
 #testimonials .carousel-control-next-icon {
     width: 40px;
-    /* Custom width */
     height: 40px;
-    /* Custom height */
-    /* Custom yellow color */
-    /* Circular shape */
+    background-color: #ffc107;
+    border-radius: 50%;
 }
 
-/* Mobile Menu Styling */
-#mobile-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+/* Section: Gallery */
+#gallery {
+    background: #f8f9fa;
 }
 
-#mobile-menu.show {
-    max-height: 400px;
-    /* Adjust based on menu size */
+#gallery .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Calculator Section Styling */
+.calculator-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.calculator-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+.calculator-section p.description {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+    border-radius: 10px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+}
+
+/* Buttons for the Calculator Section */
+.btn-calculate {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.3rem;
+    height: 55px;
+    width: 220px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-calculate:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9fafb;
+    padding: 80px 20px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+.contact-section .form-control,
+.contact-section .form-select {
+    border-radius: 10px;
+    height: 50px;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contact-section .form-control:focus,
+.contact-section .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 8px rgba(128, 189, 255, 0.5);
+}
+
+.contact-section .btn-submit {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    height: 55px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-section .btn-submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.contact-section .custom-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.contact-section iframe {
+    border-radius: 15px;
+    border: 2px solid #ced4da;
 }
 
 /* Footer Styling */
@@ -245,53 +375,57 @@ footer p {
         font-size: 1.5rem;
     }
 
-    #about-home h2 {
-        font-size: 1.75rem;
-        /* Reduce heading size on mobile */
-    }
-
-    #about-home h3 {
-        font-size: 1.5rem;
-        /* Reduce subtitle size on mobile */
-    }
-
-    #about-home p {
-        font-size: 1rem;
-        /* Reduce paragraph size on mobile */
-    }
-
-    #about-home a.btn {
-        font-size: 0.875rem;
-        /* Smaller button text */
-        padding: 12px 24px;
-        /* Adjust padding */
-    }
-
-    /* Adjustments for other sections */
-    #benefits .card {
-        margin-bottom: 1.5rem;
-        /* Add spacing between cards */
-    }
-
-    #benefits .card h3 {
+    h4,
+    h5,
+    h6 {
         font-size: 1.25rem;
-        /* Reduce card heading size */
     }
 
-    #benefits .card p {
+    section {
+        padding: 2rem 0;
+    }
+
+    #introduction h2 {
+        font-size: 1.75rem;
+    }
+
+    #introduction p {
+        font-size: 1rem;
+    }
+
+    #introduction a.btn {
         font-size: 0.875rem;
-        /* Reduce card text size */
+        padding: 10px 20px;
     }
-}
 
-/* General Button Hover Effects */
-button,
-.slider-btn {
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    #about-home h2,
+    #benefits h2,
+    #testimonials h2 {
+        font-size: 1.75rem;
+    }
 
-button:hover,
-.slider-btn:hover {
-    background-color: #d69e2e;
+    #about-home p,
+    #benefits .card-text,
+    #testimonials p {
+        font-size: 0.875rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-calculate,
+    .btn-submit {
+        font-size: 1rem;
+        height: 50px;
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 60px 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
 }
