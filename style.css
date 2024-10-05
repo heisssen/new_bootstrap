@@ -53,7 +53,63 @@ section {
     background-color: #ffffff;
 }
 
-/* Hero Section Styling */
+
+/* Общие стили для Navbar */
+.navbar {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1050
+}
+
+.navbar-collapse {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+/* Настройка кнопки гамбургера */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23343a40' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 4h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zm0 4h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1zm0 4h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1 0-1z'/%3E%3C/svg%3E");
+}
+
+/* Стили ссылок для десктопной версии */
+.nav-link {
+    padding: 10px 15px;
+    color: #343a40;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+}
+
+/* Стили для мобильного Offcanvas меню */
+.offcanvas-body {
+    background-color: #343a40;
+}
+
+.offcanvas-body .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #adb5bd;
+    transition: color 0.3s ease-in-out;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Стили кнопки закрытия */
+.btn-close {
+    filter: brightness(0) invert(1);
+}
 .hero-section {
     padding: 8rem 0;
     background: #f8f9fa;

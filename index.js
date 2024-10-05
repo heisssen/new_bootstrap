@@ -35,3 +35,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 });
+
+// JavaScript для управления кнопкой-гамбургером
+document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('.navbar-toggler');
+    const togglerIcon = toggler.querySelector('.navbar-toggler-icon');
+
+    // Обработчик нажатия на гамбургер
+    toggler.addEventListener('click', function () {
+        // Переключение класса активного состояния
+        togglerIcon.classList.toggle('active');
+
+        // Изменение атрибута aria-expanded
+        const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+        toggler.setAttribute('aria-expanded', !isExpanded);
+    });
+});
