@@ -110,24 +110,72 @@ section {
 .btn-close {
     filter: brightness(0) invert(1);
 }
+/* Стили для Hero Section */
 .hero-section {
-    padding: 8rem 0;
-    background: #f8f9fa;
-    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Полная высота экрана */
 }
 
+/* Стили для Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('hero3.jpg');
+    /* Убедитесь, что путь к изображению правильный */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Высота секции — полный экран */
+}
+
+/* Оверлей (затемняющий слой) */
+.hero-section .absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Уменьшите плотность затемнения до 30% */
+}
+
+/* Стили текста в Hero Section */
 .hero-section h1 {
-    color: #343a40;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    /* Убедитесь, что цвет текста белый */
     margin-bottom: 1rem;
 }
 
 .hero-section p {
     font-size: 1.25rem;
-    color: #6c757d;
     margin-bottom: 2rem;
+    color: #ffffff;
+    /* Белый цвет текста */
 }
 
+/* Стили кнопки */
+.hero-section a {
+    background-color: #fbbf24;
+    /* Желтая кнопка */
+    color: #343a40;
+    /* Цвет текста */
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    /* Закругленные углы */
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-section a:hover {
+    background-color: #f59e0b;
+    /* Более насыщенный желтый при наведении */
+}
 /* Section: Про наш дім */
 #about-home {
     background: #f8f9fa;
